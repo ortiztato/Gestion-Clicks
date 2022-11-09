@@ -1,0 +1,53 @@
+env:
+  browser: true
+  es2021: true
+  node: true
+extends:
+  - standard
+  - 'plugin:@next/next/recommended'
+  - 'next/core-web-vitals'
+  - 'plugin:jsx-a11y/strict'
+  - 'plugin:@typescript-eslint/recommended'
+  - 'plugin:import/recommended'
+  - 'plugin:import/typescript'
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 12
+  sourceType: module
+globals:
+  React: true
+  JSX: true
+  IntersectionObserverInit: true
+  StaticImageData: true
+  NodeListOf: true
+plugins:
+  - '@typescript-eslint'
+settings:
+  react:
+    version: detect
+rules:
+  indent:
+    - error
+    - tab
+  newline-after-var:
+    - error
+    - always
+  no-tabs:
+    - off
+  no-unused-vars:
+    - off
+  import/order:
+    - error
+  valid-typeof:
+    - off
+  jsx-a11y/anchor-is-valid:
+    - off
+  react/jsx-uses-react:
+    - off
+  react/react-in-jsx-scope:
+    - off
+  "@typescript-eslint/no-unused-vars":
+    - error
+    - argsIgnorePattern: "^_"

@@ -1,0 +1,15 @@
+node_modules
+dist
+.next
+yarn.lock
+yarn-error.log
+server.js
+scratch.js
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

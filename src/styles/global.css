@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes open-form{
+	from{
+		transform: translateX(550px);
+	}
+	to{
+		transform: translateX(0px);
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+@font-face {
+	font-family: 'Helvetica';
+	src: url('/fonts/Helvetica.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.font-helvetica {
+	font-family: 'Helvetica';
+}
+
+@font-face {
+	font-family: 'Helvetica Neue LT Sdt Light';
+	src: url('/fonts/Helvetica Neue CE 35 Thin.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.font-helveticaneue-light {
+	font-family: 'Helvetica Neue LT Sdt Light';
+}
+
+@font-face {
+	font-family: 'Helvetica Neue LT Sdt Medium';
+	src: url('/fonts/Helvetica Neue CE 55 Roman.ttf') format('ttf');
+	font-weight: medium;
+	font-style: normal;
+	font-display: swap;
+}
+
+.font-helveticaneue-medium {
+	font-family: 'Helvetica Neue LT Sdt Medium';
+}
+
+@font-face {
+	font-family: 'Helvetica Neue LT Sdt Bold';
+	src: url('/fonts/Helvetica Neue CE 75 Bold.ttf') format('ttf');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+.font-helveticaneue-bold {
+	font-family: 'Helvetica Neue LT Sdt Bold';
+}
+
+ .fade-in{
+	animation: fadeIn  1s;
+}
+
+.div{
+	transition: width all
+}
+
+.open-form{
+	animation:  open-form 1.5s ease-in-out ;
+}
+
+.fade-out{
+	animation: fadeOut 1s;
+}
+
+.text-16 {
+	font-size: 16px;
+}
+
+.text-18 {
+	font-size: 18px;
+}
+
+.text-19 {
+	font-size: 19px;
+}
+
+.text-20 {
+	font-size: 20px;
+}
+
+.text-22 {
+	font-size: 22px;
+}
+
+.text-24 {
+	font-size: 24px;
+}
+
+.text-28 {
+	font-size: 20px;
+}
+
+.text-37 {
+	font-size: 37px;
+}
+
+.text-39 {
+	font-size: 39px;
+}
+
+.text-xxs {
+	font-size: 10px;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('/fonts/Raleway-Regular.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.font-raleway {
+	font-family: 'Raleway';
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/fonts/Montserrat-Regular.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.font-montserrat {
+	font-family: 'Montserrat';
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Regular.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.font-roboto {
+	font-family: 'Roboto';
+}
